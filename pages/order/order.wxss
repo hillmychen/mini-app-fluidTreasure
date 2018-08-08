@@ -1,0 +1,44 @@
+/* pages/order/order.wxss */
+.order , .address{
+  padding: 20rpx;
+}
+view text{
+  font-size: 34rpx;
+  text-align: center;
+  display: block;
+  line-height: 60rpx;
+  background: #efefef;
+  border: 2rpx solid #CCCCCC;
+  box-sizing: border-box;
+  height: 60rpx;
+  
+  
+}
+.order_text{
+  line-height: 60rpx;
+}
+view{
+  width:100%;
+  box-sizing: border-box;
+  font-size: 34rpx;
+  text-align: center;
+}
+.order_address{
+  font-size: 32rpx;
+}
+.liquidTopUp_con{
+  width:350rpx;
+  height:350rpx;
+  margin: 0 auto;
+  margin-top: 70rpx;
+  margin-bottom: 40rpx;
+}
+.liquidTopUp{
+  width: 350rpx;
+  height:350rpx;
+  margin: 0 auto;
+}
+.text_tip{
+  padding: 30rpx;
+  font-size: 30rpx;
+}

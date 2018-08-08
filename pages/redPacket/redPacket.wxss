@@ -1,0 +1,172 @@
+/* pages/redPacket/redPacket.wxss */
+.top{
+  height:400rpx;
+  background: #f5f5f5;
+}
+.lf{
+  float: left;
+}
+.ri{
+  float: right;
+}
+.both{
+  clear: both;
+}
+.flex{
+  display: flex;
+}
+.center{
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.header{
+  background: #22A9CE;
+  height: 100rpx;
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius: 50%;
+  position: relative;
+}
+.header .header_img{
+  position: absolute;
+  bottom:0rpx;
+  left: 50%;
+  margin-bottom: -60rpx;
+  margin-left: -60rpx;
+  height: 100rpx;
+  width:100rpx;
+  border: 10rpx solid #eed49e;
+  border-radius: 10rpx;
+}
+.pin{
+  font-size: 30rpx;
+  background:#EBBA59;
+  color:#FCF7EC;
+  height:50rpx;
+  width:50rpx; 
+  text-align: center;
+  line-height: 50rpx;
+  margin-left: 16rpx;
+  border-radius:6rpx;
+}
+.name{
+  margin-top: 70rpx;
+  flex-direction: column;
+}
+.nickname{
+  font-size: 30rpx;
+}
+.txt{
+  font-size: 30rpx;
+}
+.num{
+  font-size: 50rpx;
+}
+.ifish{
+  font-size: 28rpx;
+}
+.tiqu{
+  color: #5f5e85;
+  font-size: 30rpx;
+}
+.all_red{
+  color:#a8a8a8;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #dedede;
+}
+.user_con{
+  padding: 0rpx 40rpx;
+}
+.user_list{
+  padding: 30rpx 0;
+  border-bottom: 2rpx solid #dedede;
+  font-size: 30rpx;
+}
+.user_img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+  margin-right: 16rpx;
+}
+.user_time{
+  color: #c6c6c6;
+  margin-top: 12rpx;
+}
+
+.password-input-container{
+  background: rgba(142, 142, 142, .6);
+  position:fixed;
+  right:0;
+  bottom:0;
+  top:0;
+  left:0;
+  -webkit-overflow-scrolling: touch;
+  z-index: 100;
+}
+
+
+.red_back{
+  background:#ce3e31;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 60rpx;
+  height: 60%;
+  border: 20rpx solid #d43a35;
+  border-radius: 16rpx;
+  flex-direction: column;
+}
+.comfit_set_con{
+
+  width:160rpx;
+  height: 160rpx;
+  background: #f4e5b5;
+  margin-top: 30rpx;
+  border-radius: 50%;
+  color:#f3d7ab;
+
+}
+.comfit_send{
+  margin-top: 5rpx;
+  box-sizing: border-box;
+  /* border: 4rpx solid #e3e3d4; */
+  width:160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  background:#f4e5b5;
+  border: none;
+  text-align: center;
+  line-height: 160rpx;
+  font-size: 60rpx;
+  font-weight: bold;
+
+}
+.send_txt{
+  color:#f3d7ab;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+}
+.send_tip{
+  color:#f3d7ab;
+  margin-top: 20rpx;
+}
+.red_header_img{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

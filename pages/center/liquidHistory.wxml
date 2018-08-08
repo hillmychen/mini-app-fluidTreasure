@@ -1,0 +1,49 @@
+<!--pages/center/liquidHistory.wxml-->
+ <import src="../template/center-template"/>
+<view class='top flex'>
+  <view class="get {{id==1?'sh-active':''}}" data-id="1" bindtap='sel'>收到的流宝</view>
+  <view class="give  {{id==2?'sh-active':''}}" data-id="2" bindtap='sel'>发出的流宝</view>
+  
+</view>
+<!-- <block wx:if="{{temp}}">
+  <template is="no-results" />
+</block> -->
+<block wx:if="{{id==1}}">
+    <block wx:if="{{temp1}}">
+      <template is="no-results" />
+    </block>
+    <block wx:else >
+      <block wx:for="{{data1}}" wx:key="">
+        <view class="results-box flex">
+        <view class='history_lf'>
+          <view class="name flex">{{item.nickname}}<view class="pin" wx:if="{{item.id==1}}">拼</view></view>
+          
+          <view class="time">{{item.create_at}}</view>
+        </view>
+        <view class='history_ri'>
+          <text class="num">{{item.money}} \t 流宝</text>
+        </view>
+      </view>
+      </block>
+    </block>
+</block>
+
+<block wx:if="{{id==2}}">
+    <block wx:if="{{temp2}}">
+      <template is="no-results" />
+    </block>
+    <block wx:else>
+    <block wx:for="{{data2}}">
+      <view class="results-box flex">
+        <view class='history_lf'>
+          <view class="name flex">{{item.nickname}} </view>
+          
+          <view class="time">{{item.create_time}}</view>
+        </view>
+        <view class='history_ri'>
+          <text class="num">{{item.money}} \t 流宝</text>
+        </view>
+      </view>
+    </block>
+    </block>
+</block>

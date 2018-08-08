@@ -1,0 +1,3 @@
+<!--pages/center/withDrawHistory.wxml-->
+<import src="../template/center-template.wxml"/>
+ <template is="{{withDrawList.length>0?'wirhDrawHistory-results':'no-results'}}" data="{{withDrawList:withDrawList}}"></template> 

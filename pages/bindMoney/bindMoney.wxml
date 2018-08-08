@@ -1,0 +1,16 @@
+<!--pages/bindMoney/bindMoney.wxml-->
+<view class="container">
+<form bindsubmit="withDrawformSubmit">
+
+  <view class="set_pass flex column-center">
+    <view>钱包地址:</view>
+    <input type='txt'disabled="{{disabled}}"  data-id="valpass" placeholder='{{address}}' bindinput='inputAmount' class='set_pass_in' name='address'></input>
+  </view>
+   <!-- <view class="con_pass flex column-center">
+    <view>输入密码:</view>
+    <input type='password' data-id="valcon" bindinput='inputAmount' placeholder='请输入密码' class='con_pass_in' maxlength='6' ></input>
+  </view>  -->
+  <button class='confirm' bindtap="sub" formType='submit'>绑定</button>
+</form>
+  
+</view>

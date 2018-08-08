@@ -1,0 +1,95 @@
+/* pages/center/center.wxss */
+.top-header{
+  background:#22A9CE;
+  height: 375rpx;
+  position: relative;
+  align-items: center;
+  -webkit-align-items:center;
+
+}
+.bg-pic{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  z-index: 0;
+}
+.flex{
+  display: flex;
+  display: -webkit-flex;
+}
+.flex-1{
+  flex:1;
+  -webkit-flex:1;
+}
+.justify-content{
+  justify-content: center;
+  -webkit-justify-conten:center;
+}
+.info-content{
+  width: 150rpx;
+  height: auto;
+  text-align:center;
+  color:white;
+  z-index: 1;
+}
+.headimg{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.info-name{
+  display: block;
+}
+.flex-around{
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+.align-items{
+  align-items: center;
+  -webkit-align-items:center;  
+}
+.ch-fish-tab{
+  width:695rpx;
+  margin:-30rpx auto 0;
+  border-radius:10rpx;
+  position:relative;
+  background:white;
+  box-shadow:0rpx 3rpx 6rpx grey;
+
+}
+.flex-wrap{
+  flex-wrap: wrap;
+  -webkit-flex-wrap:wrap;
+}
+.ch-fish-img{
+  width:50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.config-item{
+  width: 635rpx;
+  height: 124rpx;
+  font-size:30rpx;
+  line-height:124rpx;
+
+}
+.config-icon{
+  width:50rpx;
+  height: 50rpx;
+}
+.config-item-title{
+  padding-left: 25rpx;
+  font-size: 33rpx;
+}
+
+.border-item{
+  border-bottom:1px solid #f5f5f5;
+}
+.fish-history{
+  margin-top:30rpx;
+}
+.font30{
+  font-size: 30rpx;
+}

@@ -1,0 +1,130 @@
+<!--pages/center/index.wxml-->
+<view class="oy_center_head flex">
+    <view class="flex-1 flex flex-ver">
+         <image mode="aspectFill" class="oy_user_img" src="{{headUrl}}"></image> 
+        <view class="flex-1">
+            <view class="oy_user_name">{{myName}}</view>
+            <view class="oy_user_lv">ID:cxxxx_5444</view>
+            <view class="oy_user_lv">会员等级：普通会员</view>
+        </view>
+    </view>
+    <view class="flex flex-jcfe">
+        <navigator url="">
+             <image mode='aspectFill' src="../../img/oy_set@2x.png" class="oy_set_img"></image>
+        </navigator>
+    </view>    
+</view>
+<view class="oy_center_main_head flex flex-ver">
+    <image mode='aspectFill' class="oy_icon" src="../../img/oy_wallet@2x.png"></image>
+    <view class="flex-1">我的钱包</view>
+</view>
+<view class="oy_center_item_box flex flex-ver">
+    <view class="oy_item1 flex flex-col flex-center">
+        <view class="oy_money">6.000</view>
+        <view class="oy_money_title">余额</view>
+    </view>
+    <view class="oy_item1 flex flex-col flex-center">
+         <view class="oy_money">666666</view>
+        <view class="oy_money_title">积分</view>
+    </view>
+</view>
+<view class="oy_center_main_head flex flex-ver">
+    <image mode='aspectFill' class="oy_icon" src="../../img/oy_myorder.png"></image>
+    <view class="flex-1">我的订单</view>
+    <navigator src="" class="flex flex-ver oy_nav_box" hover-class='none'>
+        <view class="oy_nav_title">
+            查看全部
+        </view>
+        <image mode='aspectFill' src="../../img/oy_all@2x.png"></image>
+    </navigator>
+</view>
+<view class="flex flex-ver oy_center_list">
+ <navigator src="" class="oy_center_item flex flex-col flex-center">
+        <image mode="aspectFill" src="../../img/oy_nopay@2x.png" class="oy_item_icon"></image>
+        <view class="oy_center_item_title">待付款</view>
+    </navigator> 
+    <navigator src="" class="oy_center_item flex flex-col flex-center">
+        <image mode="aspectFill" src="../../img/oy_deliver@2x.png" class="oy_item_icon"></image>
+        <view class="oy_center_item_title">待发货</view>
+    </navigator> 
+    <navigator src="" class="oy_center_item flex flex-col flex-center">
+        <image mode="aspectFill" src="../../img/oy_delivery@2x.png" class="oy_item_icon"></image>
+        <view class="oy_center_item_title">待收货</view>
+    </navigator> 
+    <navigator src="" class="oy_center_item flex flex-col flex-center">
+        <image mode="aspectFill" src="../../img/oy_complete@2x.png" class="oy_item_icon"></image>
+        <view class="oy_center_item_title">已完成</view>
+    </navigator> 
+</view>
+<view class="oy_center_main_head flex flex-ver">
+    <image mode='aspectFill' class="oy_icon" src="../../img/oy_tool.png"></image>
+    <view class="flex-1">常用工具</view>
+</view>
+<view class="flex flex-ver flex-wrap">
+    <navigator src="" class="oy_center_item1">
+        <view class="flex flex-col flex-center oy_center_item_main">
+             <image mode="aspectFill" src="../../img/oy_distribution@2x.png" class="oy_item_icon"></image>
+            <view class="oy_center_item_title">分销中心</view>
+        </view>
+    </navigator> 
+    <navigator src="" class="oy_center_item1">
+        <view class="flex flex-col flex-center oy_center_item_main">
+             <image mode="aspectFill" src="../../img/oy_perfect@2x.png" class="oy_item_icon"></image>
+            <view class="oy_center_item_title">完善资料</view>
+        </view>
+    </navigator> 
+    <navigator src="" class="oy_center_item1">
+        <view class="flex flex-col flex-center oy_center_item_main">
+             <image mode="aspectFill" src="../../img/oy_cart@2x.png" class="oy_item_icon"></image>
+            <view class="oy_center_item_title">我的购物车</view>
+        </view>
+    </navigator> 
+    <navigator src="" class="oy_center_item1">
+        <view class="flex flex-col flex-center oy_center_item_main oy_noline">
+             <image mode="aspectFill" src="../../img/oy_attention@2x.png" class="oy_item_icon"></image>
+            <view class="oy_center_item_title">我的关注</view>
+        </view>
+    </navigator> 
+    <navigator src="" class="oy_center_item1">
+        <view class="flex flex-col flex-center oy_center_item_main">
+             <image mode="aspectFill" src="../../img/oy_footer@2x.png" class="oy_item_icon"></image>
+            <view class="oy_center_item_title">我的足迹</view>
+        </view>
+    </navigator> 
+     <navigator src="" class="oy_center_item1">
+        <view class="flex flex-col flex-center oy_center_item_main">
+             <image mode="aspectFill" src="../../img/oy_discount@2x.png" class="oy_item_icon"></image>
+            <view class="oy_center_item_title">领取优惠券</view>
+        </view>
+    </navigator> 
+     <navigator url="discount" class="oy_center_item1">
+        <view class="flex flex-col flex-center oy_center_item_main">
+             <image mode="aspectFill" src="../../img/oy_discount1@2x.png" class="oy_item_icon"></image>
+            <view class="oy_center_item_title">我的优惠券</view>
+        </view>
+    </navigator> 
+     <navigator src="" class="oy_center_item1">
+        <view class="flex flex-col flex-center oy_center_item_main oy_noline">
+             <image mode="aspectFill" src="../../img/oy_withdraw@2x.png" class="oy_item_icon"></image>
+            <view class="oy_center_item_title">余额提现</view>
+        </view>
+    </navigator> 
+     <navigator src="" class="oy_center_item1">
+        <view class="flex flex-col flex-center oy_center_item_main">
+             <image mode="aspectFill" src="../../img/oy_balance@2x.png" class="oy_item_icon"></image>
+            <view class="oy_center_item_title">余额明细</view>
+        </view>
+    </navigator> 
+     <navigator src="" class="oy_center_item1">
+        <view class="flex flex-col flex-center oy_center_item_main">
+             <image mode="aspectFill" src="../../img/oy_adr@2x.png" class="oy_item_icon"></image>
+            <view class="oy_center_item_title">收货地址管理</view>
+        </view>
+    </navigator> 
+     <navigator src="" class="oy_center_item1">
+        <view class="flex flex-col flex-center oy_center_item_main">
+             <image mode="aspectFill" src="../../img/oy_data@2x.png" class="oy_item_icon"></image>
+            <view class="oy_center_item_title">会员资料设置</view>
+        </view>
+    </navigator> 
+</view>

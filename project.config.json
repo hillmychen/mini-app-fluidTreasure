@@ -1,0 +1,134 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.91",
+	"appid": "wxb8f0c9058249f07c",
+	"projectname": "fish",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "发鱼宝",
+					"pathName": "pages/giveFish/giveFish",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "授权",
+					"pathName": "pages/authorize/index",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "个人中心",
+					"pathName": "pages/center/center",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "提取",
+					"pathName": "pages/withDraw/withDraw",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "提现记录",
+					"pathName": "pages/center/withDrawHistory",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "流币充值",
+					"pathName": "pages/center/liquidTopUp",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "设置密码",
+					"pathName": "pages/center/passwordConfig",
+					"query": ""
+				},
+				{
+					"id": 8,
+					"name": "流宝记录",
+					"pathName": "pages/center/liquidHistory",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "红包记录",
+					"pathName": "pages/redPacket/redPacket",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "红包记录",
+					"pathName": "pages/redPacket/redPacket",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "模板",
+					"pathName": "pages/template/center-template",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "钱包绑定",
+					"pathName": "pages/bindMoney/bindMoney",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "订单信息",
+					"pathName": "pages/order/order",
+					"query": ""
+				},
+				{
+					"id": 14,
+					"name": "充值记录",
+					"pathName": "pages/recharge/recharge",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商城",
+					"pathName": "pages/shop/shopIndex",
+					"query": ""
+				}
+			]
+		}
+	}
+}

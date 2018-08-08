@@ -1,0 +1,5 @@
+/* pages/center/withDrawHistory.wxss */
+@import "../template/center-template.wxss";
+page{
+  background:rgba(237,236,232,1); 
+}

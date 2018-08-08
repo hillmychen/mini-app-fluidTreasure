@@ -1,0 +1,107 @@
+.top-header{
+  background:#22A9CE;
+  height: 385rpx;
+  align-items: center;
+  -webkit-align-items:center;
+  position: relative;
+}
+.bg-pic{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  z-index: 0;
+}
+.flex{
+  display: flex;
+  display: -webkit-flex;
+}
+.justify-content{
+  justify-content: center;
+  -webkit-justify-conten:center;
+}
+.info-content{
+  width: 150rpx;
+  height: auto;
+  text-align:center;
+  color:white;
+  z-index: 1;
+}
+.headimg{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.info-name{
+  display: block;
+  font-size: 30rpx;
+}
+.flex-around{
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+.align-items{
+  align-items: center;
+  -webkit-align-items:center;  
+}
+.ch-fish-tab{
+  width:690rpx;
+  margin:-15rpx auto 0;
+  border-radius:10rpx;
+  position:relative;
+  height:120rpx;
+  background:white;
+  box-shadow:0rpx 5rpx 10rpx #bfbfbf;
+  font-size:30rpx;
+}
+.ch-fish-img{
+  width:70rpx;
+  height: 70rpx;
+  margin-right: 35rpx;
+}
+.logo-show{
+  width:100%;
+
+}
+.ifish-logo{
+  margin:60rpx auto ;
+  width:350rpx;
+  height:280rpx;
+  background: #83D8F0;
+  border-radius: 30rpx;
+}
+.ifish-logo image{
+  width: 170rpx;
+  height: 170rpx;
+  
+}
+.flex-1{
+  flex:1;
+  -webkit-flex:1;
+}
+.hehe-slogan{
+  text-align: center;
+  word-wrap: break-word;
+  font-family: 'Cabin', Helvetica Neue, Sans-serif;
+  color:#666;
+}
+.slogan{
+  display: block;
+}
+.big{
+  font-weight: 400;
+  font-size:44rpx;
+  padding:0 60rpx;
+}
+.small{
+  font-size: 34rpx;
+  padding:20rpx 80rpx;
+
+}
+.shop{
+  font-size: 60rpx;
+  margin-bottom:20rpx;
+  color:darkblue;
+
+}

@@ -1,0 +1,64 @@
+<!--pages/giveFish/giveFish.wxml-->
+
+ <view class='hehe-tab flex justify-content flex-around align-items'>
+    <view wx:for="{{tapTitle}}" wx:key="" class="hehe-luck hehe-tab-item flex-1 {{index==tapData.currentIndex?'active':''}}" bindtap='heheTapFish' id="{{item.id}}" >
+    <text class="{{index==2?'color-grey':''}}">{{item.title}}</text>
+  </view>
+</view>
+<view class='hehe-num-input'>
+    <view class='hehe-total flex flex-between align-items border-bottom' >
+
+      <text >{{tapData.countTitle}}</text>
+      <view class='flex align-items input-item'>
+        <input placeholder='输入数量' type='number' class='num-input' value='{{num}}' data-id="input_fish_num" bindinput='inputAmount' type='number'></input>
+        <text class='descrip'>流宝</text>      
+      </view>
+
+    </view>
+    <view class='hehe-total total-fish flex flex-between align-items' >
+      <text >流宝个数</text>
+      <view class='flex align-items input-item'>
+        <input placeholder='输入个数' type='number' class='num-input' value='{{num2}}' data-id="input_amount" bindinput='inputAmount' type='number'></input>
+        <text class='descrip'>个</text>      
+      </view>
+    </view>
+</view>
+
+<view class='hehe-num-input redbag-description flex flex-start align-items'>
+  <input placeholder='恭喜发财，大吉大利' data-id="input_description" bindinput='inputAmount' value='{{txt}}'></input>
+</view>
+
+<view class='confirm-redbag flex justify-content align-items'>
+  <button class='confirm-redbag' bindtap='generateRedEnvelopes'>生成红包</button>
+</view> 
+
+<!-- 显示输入密码模态框 -->
+ <view class='password-input-container ' wx:if='{{passwordModalShow}}'>
+  <view class='password-input-content'>
+    <view class='password-input fish-alert-title flex align-items border-bottom'>
+      <icon type="cancel" size='30' bindtap='modalCancel' color='#22A9CE'></icon>
+      <text class='flex-1 ' >请输入流宝密码</text>
+    </view>
+    <view class='password-input fish-info flex justify-content align-items border-bottom'>
+      <text>{{inputData.input_fish_num}}流宝</text>
+    </view>
+    <view class='password-input fish-password flex flex-between align-items'>
+      <input type='number' placeholder='输入流宝密码' maxlength='6' password="true" cursor-spacing="20" adjust-position="false" bindinput='inputAmount' data-id='input_password' focus="{{passwordModalShow}}"></input>
+       <button class='confirm-password' bindtap='confirmGenerateRedEnvelopes'>确定</button> 
+    </view>
+  </view>
+</view> 
+   <!-- 红包模态框    -->
+ <view class='password-input-container'  wx:if="{{redModalShow}}">
+  <view class='red_back flex center'>
+    <view class='send_txt'>你发送了一个流宝，请确定发送</view>
+    <view class='send_tip'>{{inputData.input_description}}</view>
+    <view class='comfit_set_con'>
+      <button class='comfit_send' hover-class="none" open-type="share">发送</button>
+    </view>
+    
+  </view>
+
+</view> 
+
+

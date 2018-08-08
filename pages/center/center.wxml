@@ -1,0 +1,65 @@
+<!--pages/center/center.wxml-->
+<view>
+  <view class="top-header flex justify-content">
+      <image class='bg-pic' src='../../assets/img/liquid.png' ></image>
+      <view class='info-content'>
+        <image src='{{headUrl}}' class='headimg'></image>
+        <text class='info-name font30'>{{myName}}</text>
+        <text class='info-name'>{{fishCount}}</text>
+      </view>
+  </view>
+
+  <view class=' flex flex-around ch-fish-tab flex-wrap'>
+    <navigator class='config-item flex align-items border-item ' url='./withDrawHistory' hover-class="none">
+      <image class='config-icon' src='../../assets/img/withdrawhistory.png'></image>
+      <text class='config-item-title flex-1' >提现记录</text>    
+      <image class='config-icon' src='../../assets/img/arrow-right.png'></image>        
+    </navigator>
+
+     <navigator class='config-item flex align-items border-item' hover-class="none" url='../recharge/recharge'>
+      <image class='config-icon' src='../../assets/img/upload.png'></image>      
+      <text class='config-item-title flex-1' >充值记录</text>
+      <image class='config-icon' src='../../assets/img/arrow-right.png'></image>
+    </navigator> 
+
+     <navigator class='config-item flex align-items border-item' hover-class="none" url='./liquidHistory'>
+      <image class='config-icon' src='../../assets/img/fishhistory.png'></image>            
+      <text class='config-item-title flex-1' >流宝记录</text>
+      <image class='config-icon' src='../../assets/img/arrow-right.png'></image>
+    </navigator>
+
+    <navigator class='config-item flex align-items border-item' hover-class="none" url='./passwordConfig'>
+      <image class='config-icon' src='../../assets/img/password.png'></image>      
+      <text class='config-item-title flex-1' >设置密码</text>
+      <image class='config-icon' src='../../assets/img/arrow-right.png'></image>
+    </navigator>
+
+   
+
+      <navigator class='config-item flex align-items border-item' hover-class="none" url='./liquidTopUp'>
+      <image class='config-icon' src='../../assets/img/withdrawhistory.png'></image>      
+      <text class='config-item-title flex-1' >流宝充值</text>
+      <image class='config-icon' src='../../assets/img/arrow-right.png'></image>
+    </navigator> 
+
+    <navigator class='config-item flex align-items' hover-class="none" url='../bindMoney/bindMoney'>
+      <image class='config-icon' src='../../assets/img/set.png'></image>      
+      <text class='config-item-title flex-1' >钱包绑定</text>
+      <image class='config-icon' src='../../assets/img/arrow-right.png'></image>
+    </navigator>
+    
+  </view>
+
+  <!-- <view class='ch-fish-tab flex align-items justify-content fish-history'>
+    
+  </view>
+
+  <view class='ch-fish-tab flex align-items justify-content fish-history'>
+   
+  </view>
+
+   <view class='ch-fish-tab flex align-items justify-content fish-history'>
+    
+  </view>  -->
+</view>
+

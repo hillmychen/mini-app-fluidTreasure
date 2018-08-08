@@ -1,0 +1,70 @@
+/* pages/center/liquidHistory.wxss */
+@import "../template/center-template.wxss";
+.flex{
+  display: flex;
+}
+.column-center{
+  align-items: center;
+  align-content: center;
+}
+.results-box {
+
+border-bottom:1rpx solid #ccc;
+padding: 0 20rpx;
+box-sizing: border-box;
+}
+
+.top view{
+  width:50%;
+  height:100rpx;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  border-bottom:2rpx solid #E8E8E8;
+}
+.top .sh-active{
+  border-bottom: 2rpx solid #22A9CE;
+  color:#22A9CE;
+}
+
+.history_lf{
+  width:70%;
+  font-size: 30rpx;
+}
+.history_lf .name{
+  
+  font-size: 30rpx;
+}
+.history_lf .time{
+  color:#919191;
+  font-size:28rpx;
+  line-height: 58rpx;
+}
+.history_lf .pin{
+  font-size: 30rpx;
+  background:#EBBA59;
+  color:#FCF7EC;
+  padding:0rpx 8rpx; 
+  margin-left: 16rpx;
+  border-radius:6rpx;
+  
+}
+
+.history_ri{
+  width:30%;
+  text-align: right;
+}
+.history_ri .num{
+  font-size: 30rpx;
+}
+
+
+
+
+
+
+
+
+
+
+

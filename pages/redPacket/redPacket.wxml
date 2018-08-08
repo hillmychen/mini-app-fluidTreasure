@@ -1,0 +1,49 @@
+<!--pages/redPacket/redPacket.wxml-->
+<view class='top'>
+  <view class='header'>
+    <image class='header_img' src='{{personage.headimgurl}}'></image>
+  </view>
+  <view class='flex center name'>
+      <view class='nickname flex'>{{personage.nickname}}的流宝
+          <view wx:if='{{red_type==2}}' class="pin" >拼</view>
+      </view>
+      <!-- <view class='txt'></view> -->
+      <view class='num' wx:if="{{success==1}}">{{get_num}}<text class='ifish'> 流宝</text></view>
+
+      <!-- 未抢到红包 -->
+      <view  wx:if="{{success==2}}">未抢到红包</view>
+      
+      <!-- <navigator class='tiqu' url="{{tiqu_url}}" hover-class='none'>{{riqu_txt}}</navigator> -->
+      <view class='tiqu' url="{{tiqu_url}}" hover-class='none' bindtap='reindex'>{{riqu_txt}}</view>
+      
+  </view> 
+</view>
+<!-- <view class='all_red'>领取{{get_num}}/{{red_all}}个</view> -->
+<view class='all_red'>总红包{{red_all}}个</view>
+<view class='user_con'>
+  <bolck wx:for="{{red_list}}">
+    <view class='user_list'>
+      <image class='user_img lf' src='{{item.headimgurl}}'></image>
+      <view class='user_det lf'>
+        <view class='user_name'>{{item.nickname}}</view>
+        <view class='user_time'>{{item.create_at}}</view>
+      </view>
+      <view class='ri'>{{item.money}} 流宝</view>
+      <view class='both'></view>
+    </view>
+  </bolck>
+</view>
+
+<!-- 领红包 -->
+<view class='password-input-container'  wx:if="{{redModalShow}}">
+  <view class='red_back flex center'>
+    <image src="{{personage.headimgurl}}" class='red_header_img'></image>
+    <view class='send_txt flex'>给你发了一个流宝<view wx:if="{{red_type==2}}" class="pin">拼</view></view>
+    <view class='send_tip'>{{red_txt}}</view>
+    <view class='comfit_set_con'>
+      <button class='comfit_send' hover-class="none" bindtap='open_red'>開</button>
+    </view>
+    
+  </view>
+
+</view>

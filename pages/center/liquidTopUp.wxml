@@ -1,0 +1,61 @@
+<!-- pages/center/liquidTopUp.wxml-->
+  <!-- <view class='top-up-input flex align-items'>
+  <text >充值金额</text>
+  <input placeholder='0' class='top-up-amount' type='number' bindinput='topUpLQD'></input>
+</view>
+<button class='pay now' bindtap='payNow'>立即支付</button>
+<button class='pay cancel' bindtap='payCancel'>取消</button>  -->
+
+<form bindsubmit="withDrawformSubmit" >
+  <view class='hehe-num-input'>
+      <!-- <view class='hehe-total flex flex-start align-items border-bottom' >
+        <text class='hehe-input-descrip'>接收方:</text>
+        <view class='flex align-items input-item flex-1'>
+           <input placeholder='请扫描二维码或者手动输入地址' class='num-input flex-1' value='{{recipientSite}}' name="address"></input> 
+           <text selectable class='num-input flex-1' value='{{recipientSite}}'>lnjuDpsm6sjvuRMucUZbYUqJej2QLytA1j</text> 
+        </view>
+         <image src='../../assets/img/qr_code.png' class='qr-code' bindtap="recipientQrcode"></image> 
+      </view>    -->
+
+       <view class='hehe-total total-fish flex flex-start align-items' >
+        <text class='hehe-input-descrip'>数量</text>
+        <view class='flex align-items input-item flex-1'>
+          <input value="{{value}}" class='num-input' type='number' name="number" placeholder='请输入数量'></input>
+        </view>
+      </view> 
+
+  </view>
+   <view class='hehe-num-input'>
+    <view class=' hehe-total total-fish flex flex-start align-items'>
+      <text class='hehe-input-descrip'>流宝密码:</text>
+      <view class='flex align-items input-item flex-1'>
+        <input placeholder='输入流宝密码' password class='num-input' type='num' name="password"></input>
+      </view>
+    </view>
+  </view>
+
+  <view class='confirm-redbag flex justify-content align-items'>
+    <button formType='submit' class='withDrawSubmit'>确定</button>
+  </view> 
+   <!-- <view class='liquidTopUp_con'>
+    <image class='liquidTopUp' src='../../assets/img/liquidTopUp.png'></image>
+  </view>  -->
+</form>
+  <!-- <web-view src="https://liubi.ltd/order/sn"></web-view> -->
+
+<!-- 显示输入密码模态框 -->
+<!-- <view class='password-input-container ' wx:if='{{passwordModalShow}}'>
+  <view class='password-input-content'>
+    <view class='password-input fish-alert-title flex align-items border-bottom'>
+      <icon type="cancel" size='30' bindtap='modalCancel' color='#22A9CE'></icon>
+      <text class='flex-1 ' >请输入鱼宝密码</text>
+    </view>
+    <view class='password-input fish-info flex justify-content align-items border-bottom'>
+      <text>{{inputData.input_fish_num}}ifish</text>
+    </view>
+    <view class='password-input fish-password flex flex-between align-items'>
+      <input type='number' placeholder='输入鱼宝密码' password="true" cursor-spacing="20" adjust-position="false" focus="{{passwordModalShow}}"></input>
+       <button class='confirm-password' bindtap='confirmGenerateRedEnvelopes'>确定</button> 
+    </view>
+  </view>
+</view>  -->

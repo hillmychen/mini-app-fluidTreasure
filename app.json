@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/redPacket/redPacket",
+    "pages/giveFish/giveFish",
+    "pages/authorize/index",
+    "pages/withDraw/withDraw",
+    "pages/center/center",
+    "pages/center/withDrawHistory",
+    "pages/center/passwordConfig",
+    "pages/center/liquidHistory",
+    "pages/center/liquidTopUp",
+    "pages/template/center-template",
+    "pages/bindMoney/bindMoney",
+    "pages/order/order",
+    "pages/recharge/recharge",
+    "pages/shop/shopIndex"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#22A9CE",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  }
+}

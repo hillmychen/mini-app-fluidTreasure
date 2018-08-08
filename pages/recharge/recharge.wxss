@@ -1,0 +1,31 @@
+/* pages/recharge/recharge.wxss */
+@import "../template/center-template.wxss";
+
+.flex{
+  display: flex;
+  display: -webkit-flex;
+}
+.flex_jus{
+  justify-content: space-between;
+}
+.top{
+  font-size: 34rpx;
+  padding: 18rpx 26rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.order_list{
+  line-height: 60rpx;
+  font-size: 30rpx;
+  padding: 0 22rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.number{
+  width:35%
+}
+.money{
+  width: 20%
+}
+.time{
+  width:45%;
+  text-align: right;
+}

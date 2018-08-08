@@ -1,0 +1,15 @@
+<!--pages/order/order.wxml-->
+<view class='order'>
+    <view class='order_text'>订单号转账必填</view>
+    <text selectable="true" class='order_det'>{{order_det}}</text>
+</view>
+<view class='address'>
+    <view class='order_text'>充值地址必填</view>
+    <text selectable="true" class='order_address'>{{order_address}}</text>
+    <!-- <text selectable='true' class='order_address'>sdfwjelj</text> -->
+</view>
+<view class='liquidTopUp_con'>
+      <image class='liquidTopUp' src='../../assets/img/liquidTopUp.png'></image>    
+</view> 
+
+<view class='text_tip'>转账过程如若出现一直检测的情况，剪切粘贴收款地址即可。</view>

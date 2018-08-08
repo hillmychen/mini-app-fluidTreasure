@@ -1,0 +1,38 @@
+<view>
+  <view class="top-header flex justify-content">
+       <image class='bg-pic' src='../../assets/img/liquid.png' ></image> 
+      <navigator class='info-content' url='../center/center' hover-class="none">
+        <image src='{{headUrl}}' class='headimg' ></image>
+        <text class='info-name'>{{myName}}</text>
+        <text class='info-fish'>{{fishCount}}</text>
+      </navigator>
+  </view>
+
+  <view class='ch-fish-tab flex flex-around'>
+     <navigator class='ch-fish give flex align-items flex-1 justify-content' url='../giveFish/giveFish' hover-class="none"> 
+      <image class='ch-fish-img' src='../../assets/img/givefish.png'></image>
+      <text>流宝</text>
+    </navigator>
+    <navigator class='ch-fish extract flex align-items flex-1 justify-content' url='../withDraw/withDraw' hover-class="none">
+      <image class='ch-fish-img' src='../../assets/img/withdrawicon.png'></image>
+      <text>提取</text>
+    </navigator>
+  </view>
+  <navigator url='../shop/shopIndex' hover-class='none'>
+    <view >
+      <view class='ifish-logo flex flex-around align-items'>
+        <image src='../../assets/img/logo.png'></image>
+      </view>
+    </view>
+  </navigator>
+
+  <view class='flex flex-around shop'>
+    流宝商城
+  </view>
+
+
+  <view class='hehe-slogan'>
+    <text class='slogan big'>流动的全球价值互联网</text>
+    <text class='slogan small'>立即，直接，几乎没有成本，连接所有价值单元</text>
+  </view>
+</view>

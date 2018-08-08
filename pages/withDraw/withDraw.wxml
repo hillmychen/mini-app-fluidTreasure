@@ -1,0 +1,35 @@
+<!--pages/withDraw/withDraw.wxml-->
+<form bindsubmit="withDrawformSubmit" >
+  <view class='hehe-num-input'>
+        <view class='hehe-total flex flex-start align-items border-bottom' >
+        <text class='hehe-input-descrip'>接收方</text>
+        <view class='flex align-items input-item flex-1'>
+           <input placeholder='请扫描二维码或者手动输入地址' class='num-input flex-1' value='{{recipientSite}}' name="address"></input> 
+        </view>
+        <image src='../../assets/img/qr_code.png' class='qr-code' bindtap="recipientQrcode"></image>
+      </view>  
+
+       <view class='hehe-total total-fish flex flex-start align-items' >
+        <text class='hehe-input-descrip'>数量</text>
+        <view class='flex align-items input-item flex-1'>
+          <input value="{{value}}" class='num-input' type='number' name="number" placeholder='请输入数量'></input>
+        </view>
+      </view> 
+  </view>
+  <view class='show-left-fish'>
+    <text >可以提取 {{all_num}} LQD ,满{{num}}方可提取</text>
+  </view>
+
+  <view class='hehe-num-input'>
+    <view class=' hehe-total total-fish flex flex-start align-items'>
+      <text class='hehe-input-descrip'>流宝密码</text>
+      <view class='flex align-items input-item flex-1'>
+        <input placeholder='输入流宝密码' class='num-input' type='number' type='password' maxlength='6' name="password"></input>
+      </view>
+    </view>
+  </view>
+
+  <view class='confirm-redbag flex justify-content align-items'>
+    <button formType='submit' class='withDrawSubmit'>确定</button>
+  </view>
+</form>

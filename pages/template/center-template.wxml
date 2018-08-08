@@ -1,0 +1,26 @@
+<!--pages/template/center-template.wxml-->
+<template name="no-results">
+    <view class="no results-box flex justify-content">
+      <view class='results-box-content'>
+        <view>暂无数据</view>
+        <view>
+          <icon size='40' type='warn' color='#22A9CE'></icon>
+        </view>
+      </view>
+    </view>
+</template>
+
+<template name="wirhDrawHistory-results">
+    <block wx:for="{{withDrawList}}" wx:key="{{index}}">
+      <view class="results-box ">
+        <view class='flex flex-between'>
+          <text>流币提现</text>
+          <text>{{item.cash_money}}</text>
+        </view>
+        <view class='flex flex-between withDraw-info'>
+          <text>{{item.create_time}}</text>
+          <text>{{item.check_status}}</text>
+        </view>
+      </view>
+    </block>
+</template>

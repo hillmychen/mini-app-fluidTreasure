@@ -1,0 +1,21 @@
+<!--pages/recharge/recharge.wxml-->
+  <import src="../template/center-template"/>
+<view>
+   <block wx:if="{{temp1}}">
+      <template is="no-results" />
+    </block>
+    <view wx:else>
+      <view class='top flex flex_jus'>
+        <view class='number'>订单编号</view>
+        <view class='money'>金额</view>
+        <view class='time'>订单时间</view>
+      </view>
+      <block wx:for="{{list}}">
+        <view class='order_list flex flex_jus'>
+          <text class='number' selectable='true'>{{item.ordersn}}</text>
+          <view class='money'>{{item.order_money}}</view>
+          <view class='time'>{{item.order_time}}</view>
+        </view>
+      </block>
+    </view>
+</view> 
